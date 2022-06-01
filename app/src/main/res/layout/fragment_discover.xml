@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:text="Thể loại"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewType"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:text="Nghệ sĩ yêu thích"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewArtist"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewFragmentList"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+
+            />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

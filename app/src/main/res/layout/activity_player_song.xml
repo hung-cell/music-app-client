@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#07487C"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".views.activity.PlayerSongActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:paddingTop="20dp"
+        android:orientation="horizontal">
+        <TextView
+
+            android:layout_weight="1.9"
+            android:id="@+id/playerTitle"
+
+            android:layout_gravity="center"
+            android:paddingLeft="25dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Hãy trao cho anh"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_gravity="center"
+            android:layout_weight="0.1"
+            android:id="@+id/textViewOptions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="&#8942;"
+            android:textColor="@color/white"
+            android:textAppearance="?android:textAppearanceLarge" />
+
+    </LinearLayout>>
+
+    <TextView
+        android:id="@+id/playerArtist"
+        android:layout_gravity="center"
+        android:paddingLeft="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#8C8585"
+        android:text="Sơn tùng"
+        android:textSize="18sp"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginTop="45dp"
+           android:id="@+id/imageSongPlayer"
+
+
+            android:layout_width="250dp"
+             android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:src="@drawable/haytraochoanh" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:minHeight="40dp"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        >
+        <TextView
+            android:id="@+id/currentTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0:00"
+            android:textColor="@color/white"/>
+
+        <SeekBar
+            android:layout_weight="1"
+            android:id="@+id/seek_bar"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+
+            android:saveEnabled="false"
+
+            android:thumbTint="@color/white" />
+        <TextView
+            android:id="@+id/totalTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0:00"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        >
+
+        <ImageButton
+            android:id="@+id/btnSuffer"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_baseline_shuffle_24"
+            android:tint="@color/white"
+
+            />
+
+        <ImageButton
+            android:id="@+id/btnPrev"
+            android:layout_weight="1"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+
+            android:background="@drawable/custom_button"
+            android:src="@drawable/ic_baseline_skip_previous_24"
+            android:tint="@color/white"
+            android:scaleType="fitCenter"
+
+            />
+        <ImageButton
+            android:id="@+id/btnPlay"
+            android:layout_weight="1"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+
+            android:background="@drawable/custom_button"
+            android:src="@drawable/ic_baseline_pause_24"
+            android:tint="@color/white"
+            android:scaleType="fitCenter"
+
+            />
+        <ImageButton
+            android:id="@+id/btnNext"
+            android:layout_weight="1"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+
+            android:background="@drawable/custom_button"
+            android:src="@drawable/ic_baseline_skip_next_24"
+            android:tint="@color/white"
+            android:scaleType="fitCenter"
+
+            />
+        <ImageButton
+
+            android:layout_weight="1"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/loopButton"
+            android:background="@drawable/custom_button"
+            android:src="@drawable/ic_baseline_loop_24"
+            android:tint="@color/not_active"
+            android:scaleType="fitCenter"
+
+            />
+    </LinearLayout>>
+</LinearLayout>

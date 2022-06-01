@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewOnDevice"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_width="200dp"
+        android:layout_gravity="start"
+        android:layout_height="105dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="2">
+            <ImageButton
+                android:layout_weight="1"
+                android:background="@color/trans"
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                android:src="@drawable/ic_baseline_arrow_circle_down_24"/>
+            <TextView
+                android:layout_weight="1"
+
+                android:id="@+id/tvNameType"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="Trên thiết bị"
+                android:gravity="start"
+                android:textColor="@color/not_active"
+
+                android:textSize="25sp"
+                />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
